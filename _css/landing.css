@@ -1,0 +1,97 @@
+/* carousel styles */
+.padding-slider {
+  padding: 0px 60px 0px 60px !important;
+}
+
+.img-style {
+  height: 250px;
+  width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box {
+  display: inline-block;
+}
+
+.icon-color {
+  color: #f38609;
+  cursor: pointer;
+}
+
+/* desktop styles */
+
+.card-style {
+  margin: 30px 0px 0px 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 18rem;
+}
+
+.card .description-body {
+  font-size: 10px;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 11px 0px rgba(0,0,0,0.75);
+  transition: 0.5s;
+}
+
+.avatar-card {
+  height: 250px;
+}
+
+/* general styles */
+#states .divider {
+  border-bottom: 1px solid #cacaca;
+  margin: 20px 20px 0px 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#states > div > #box {
+  border: 2px solid #f38609;
+}
+
+.footer-font {
+  color: #424242;
+  font-weight: bold;
+}
+
+.relative-style {
+  position: relative;
+  top: 50px;
+}
+
+#mobile {
+  display: none;
+}
+
+#style-mobile {
+  display: none;
+}
+
+#desktop {
+  display: block;
+}
+
+@media only screen and ( max-width: 1000px) {
+  #loader {
+    margin-top: 500px;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  #style-mobile {
+    display: block;
+  }
+
+  #desktop {
+    display: none;
+  }
+}

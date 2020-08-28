@@ -1,0 +1,148 @@
+a {
+  text-decoration: none !important;
+  color: black !important;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.mx-center {
+  text-align: center;
+}
+
+#header h1{
+  font-weight: bold;
+  letter-spacing: 4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: -webkit-linear-gradient(left, #ff4f04 30%, #e7a65c 70%);
+  background: linear-gradient(to left, #ff4f04 30%, #e7a65c 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1, 2.5);
+}
+
+.image-brand{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  width: 10%;
+}
+
+.box-negative {
+  background: -webkit-linear-gradient(left, #d45928 30%, #fa9b5b 70%);
+  background: linear-gradient(to left, #d45928 30%, #fa9b5b 70%);
+  padding: 10px 20px;
+  margin-bottom: -20px;
+  -webkit-transform: skewY(-5deg);
+  -moz-transform: skewY(-5deg);
+  -ms-transform: skewY(-5deg);
+  -o-transform: skewY(-5deg);
+  transform: skewY(-5deg);
+}
+
+.box-positive {
+  background: -webkit-linear-gradient(left, #fa9b5b 30%, #d45928 70%);
+  background: linear-gradient(to left, #fa9b5b 30%, #d45928 70%);
+  padding: 10px 20px;
+  -webkit-transform: skewY(15deg);
+  -moz-transform: skewY(15deg);
+  -ms-transform: skewY(15deg);
+  -o-transform: skewY(15deg);
+  transform: skewY(5deg);
+}
+
+
+.bold-font {
+  color: #424242;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-bottom: 30px;
+}
+
+.redux-margin {
+  margin-bottom: 0px;
+}
+
+.redux-margin-top {
+  margin-top: -13px;
+}
+
+.redux-right {
+  margin-left: -5px !important;
+}
+
+.information-text {
+  color: #424242;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.grey-divider {
+  border-top: 2px solid rgb(201, 201, 201);
+  margin-bottom: 30px;;
+}
+
+.border-description {
+  border-bottom: 2px solid black;
+}
+
+.center-div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bold-text {
+  font-weight: 300 !important;
+}
+
+
+
+.max-font {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.min-font {
+  font-size: 8px;
+}
+
+.small-font {
+  font-size: 12px;
+}
+
+.small-font span {
+  vertical-align: text-top;
+}
+
+.vertical-font {
+  vertical-align: 1em;
+  font-size: 12px;
+}
+
+.brand-logo {
+  width: 25px;
+}
+
+@media only screen and ( max-width: 1000px ) {
+  .image-brand{ 
+    width: 35%;
+  }
+
+  .max-font {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 330px){
+  .quantity {
+    font-size: 12px;
+  }
+  
+  .mobile-font {
+    font-size: 7px;
+  }
+}

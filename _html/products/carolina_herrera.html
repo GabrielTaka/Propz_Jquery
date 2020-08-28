@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+  <head>
+    <title>Propz</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="stylesheet" type="text/css" href="../../_css/global.css">
+    <link rel="stylesheet" type="text/css" href="../../_css/products.css">
+    <link rel="icon" href="https://propz.com.br/wp-content/uploads/2020/03/propz-login_logo-100x100.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <section id="header">
+      <div class="container-fluid">
+        <h1 class="mx-center"> BELEZA </h1>
+        <img class="mx-center image-brand" src="https://propz.com.br/wp-content/themes/propz/Content/img/svg/propz-logo.svg"/>
+      </div>
+      <div class="box-negative">
+        <div class="wrapper"></div>
+      </div>
+      <div class="box-positive">
+        <div class="wrapper"></div>
+      </div>
+      <div class="container bold-font">
+        <p class="mx-center redux-margin redux-margin-top"> As lojas Propz agora possuem um espaço beleza onde você encontra tudo para montar looks únicos. </p>
+        <p class="mx-center"> Venha Conhecer!</p>
+      </div>
+    </section>
+
+    <section id="cards" class="mb-5">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-md-8 mb-3">
+            <div class="card">
+              <div id="loader" class="height-loading">
+                <div class="spinner-border center-div" role="status">
+                  <span class="sr-only ">Loading...</span>
+                </div>
+              </div>
+              <div id="data-item">
+                <div id="card-image"></div>
+                <div class="card-body">
+                  <h5 class="card-title border-description pb-2">
+                    <span id="name" class="bold-text"></span> -
+                    <span id="short_description"></span> de
+                    <span id="quantity"></span> ml</h5>
+                  <h5 class="card-text">Descubra mais sobre:</h5>
+                  <p id="description"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-4 mt-xsl-5">
+            <div class="card">
+              <div id="right-loader" class="height-right-loader" >
+                <div class="spinner-border center-div" role="status" >
+                  <span class="sr-only ">Loading...</span>
+                </div>
+              </div>
+              <div id="data-right-item" class="center-div">
+                <div class="card-body row center-div">
+                  <span class="max-font mx-center redux-margin"> 10x R$ <span id="no-fees-value"></span> </span>
+                  <p class="small-font redux-margin mx-center"> sem Juros <span class="min-font"> 1 </span> </p>
+                </div>
+                <p class="mx-center redux-margin"> ou </p>
+                <div class="card-body row center-div">
+                  <span class="max-font mx-center redux-margin"> 15x R$ <span id="fees-value"></span> </span>
+                  <p class="small-font redux-margin mx-center"> com Juros <span class="min-font"> 2 </span> </p>
+                </div>
+    
+                <button class="btn btn-warning mb-2 btn-buy">
+                  <div class="box">
+                    Comprar
+                    <svg width="1em" height="1.5em" viewBox="0 0 16 16" class="bi bi-credit-card-2-back-fill ml-2"
+                      fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd"
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5H0V4zm11.5 1a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2z" />
+                      <path d="M0 11v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1H0z" />
+                    </svg>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="grey-divider"></div>
+      <div class="container">
+        <img class="mx-center image-brand" src="https://propz.com.br/wp-content/themes/propz/Content/img/svg/propz-logo.svg" />
+        <p class="information-text redux-margin-top"> 
+          Propz S.A. Central de Atendimento - Consultas, informações e serviços transacionais: 45544-0097 (capitais e regiões metropolitanas) e 0800 778 5658 (demais localidades), atendimento de segunda a sábado, das 8h às 22h, exceto feriados. SAC Propz - Reclamações, cancelamentos e informações gerais: 0800 985 9365. Deficiência auditiva ou de fala: 0800 722 0088 (atendimento 24 horas, 7 dias por semana). Ouvidoria - Demandas não solucionadas pelos demais Canais de Atendimento: 0800 727 9599 (atendimento de segunda a sexta-feira, das 8h às 18h, exceto feriados).
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
+
+<script>
+  $(document).ready(function () {
+    $.ajax({
+      url: `https://5f4656bae165a60016ba9950.mockapi.io/api/v1/products/4`,
+      type: `get`,
+      beforeSend: function() {
+        $("#loader").show();
+        $("#right-loader").show();
+        $("#data-item").hide();
+        $("#data-right-item").hide();
+      },
+      success: function(response) {
+        $("#name").text(response.name);
+        $("#short_description").text(response.short_description);
+        $("#quantity").text(response.quantity);
+        $("#description").text(response.description);
+
+        $("#no-fees-value").text(response.without_fees);
+        $("#fees-value").text(response.with_fees);
+        $("#card-image").append(`<img class="card-img-top image-show" src="${response.big_avatar}"/>`)
+      },
+      complete: function(data) {
+        $("#loader").hide();
+        $("#right-loader").hide();
+        $("#data-item").show();
+        $("#data-right-item").show();
+      }
+    })
+  });
+</script>
